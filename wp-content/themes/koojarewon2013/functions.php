@@ -1,7 +1,7 @@
 <?php
 require(TEMPLATEPATH . '/inc/admin_functions.php');
 
-class ThemeName
+class Koojarewon
 {
     var $themeMods;
     var $templateURL;
@@ -12,22 +12,37 @@ class ThemeName
         $this->themeMods = get_theme_mods();
         
         add_theme_support('post-thumbnails');
-        add_image_size('themecode_300x200', 300, 200, true);
+        add_image_size('kjw_300x200', 300, 200, true);
+        
+        add_theme_support('custom-header', array(
+            'default-image' => '',
+            'random-default' => false,
+            'width' => 0,
+            'height' => 0,
+            'flex-height' => false,
+            'flex-width' => false,
+            'default-text-color' => '',
+            'header-text' => true,
+            'uploads' => true,
+            'wp-head-callback' => '',
+            'admin-head-callback' => '',
+            'admin-preview-callback' => '',
+        ));
         
         add_action('init', array(&$this, 'init'));
         add_action('widgets_init', array(&$this, 'widgets_init'));
         add_action('wp_enqueue_scripts', array(&$this, 'wp_enqueue_scripts'));
         
-        add_shortcode('THEMECODE_CONTACT_FORM', array(&$this, 'shortcode_contact_form'));
+        add_shortcode('KJW_CONTACT_FORM', array(&$this, 'shortcode_contact_form'));
         
-        add_action('wp_ajax_themecode_submit_contact', array(&$this, 'submit_contact'));
-        add_action('wp_ajax_nopriv_themecode_submit_contact', array(&$this, 'submit_contact'));
+        add_action('wp_ajax_kjw_submit_contact', array(&$this, 'submit_contact'));
+        add_action('wp_ajax_nopriv_kjw_submit_contact', array(&$this, 'submit_contact'));
     }
     
     function init()
     {
         // register custom post types
-        register_post_type('test',
+        /*register_post_type('test',
             array(
                 'labels' => array(
                     'name' => __( 'Tests' ),
@@ -55,7 +70,7 @@ class ThemeName
                                 'page-attributes',
                             ),
             )
-        );
+        );*/
     }
     
     function widgets_init()
@@ -78,8 +93,8 @@ class ThemeName
         $jsObject = array(
             'ajaxurl' => admin_url('admin-ajax.php')
         );
-        wp_localize_script('jquery', 'themecode', $jsObject);
-        wp_enqueue_script('themecode', $this->templateURL . '/js/main.js', array('jquery'), false, true);
+        wp_localize_script('jquery', 'kjw', $jsObject);
+        wp_enqueue_script('kjw', $this->templateURL . '/js/main.js', array('jquery'), false, true);
     }
     
     function shortcode_contact_form($atts)
@@ -158,6 +173,6 @@ class ThemeName
     }
 }
 
-global $ThemeName, $ThemeNameAdmin;
-$ThemeName = new ThemeName();
-$ThemeNameAdmin = new ThemeNameAdmin();
+global $Koojarewon, $KoojarewonAdmin;
+$Koojarewon = new Koojarewon();
+$KoojarewonAdmin = new KoojarewonAdmin();

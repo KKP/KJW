@@ -21,9 +21,23 @@
 <![endif]-->
 </head>
 <body <?php body_class(); ?>>
+<div id="topbar">
+    <div class="inner">
+        <span class="left intro">Lorem ipsum dolor sit amet consectetur adipiscing elit.Lorem ipsum dolor sit amet consectetur. <a href="#">Keep Reading</a></span>
+        <span class="right phone">Contact Us On: (07) 4630 8118</span>
+        <div class="clear"></div>
+    </div>
+</div><!-- #topbar -->
 
 <div id="header">
     <div class="inner">
-        <h1 id="logo"><a href="<?php bloginfo('home');?>"><?php bloginfo('name');?></a></h1>
+        <h1 id="logo"><a href="<?php bloginfo('home');?>"><img src="<?php header_image(); ?>" alt="<?php bloginfo( 'description' ); ?>" /></a></h1>
+        <?php wp_nav_menu(array(
+            'theme_location' => 'main-menu',
+            'container' => 'div',
+            'container_id' => 'menu',
+            'menu_id' => '',
+            'menu_class' => '',
+        ));?>
     </div>
 </div><!-- #header -->
