@@ -85,6 +85,17 @@ class Koojarewon
             'before_title' => '<h3 class="title">',
             'after_title' => '</h3>',
         ));
+        register_sidebar(array(
+            'name' => 'Footer Widgets',
+            'id' => 'footer-widgets',
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget' => '</div>',
+            'before_title' => '<h3 class="title">',
+            'after_title' => '</h3>',
+        ));
+        
+        require(TEMPLATEPATH . '/inc/widget_introsocials.php');
+        register_widget( 'IntroSocialsWidget' );
     }
     
     function wp_enqueue_scripts()
