@@ -1,8 +1,6 @@
 <?php
 
-define( 'DISALLOW_FILE_EDIT', true );
 
-define( 'BWPS_FILECHECK', true );
 
 /**
 * The base configurations of the WordPress.
@@ -93,3 +91,4 @@ define('ABSPATH', dirname(__FILE__) . '/');
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
+

@@ -23,15 +23,15 @@
 <body <?php body_class(); ?>>
 <div id="topbar">
     <div class="inner">
-        <span class="left intro">Lorem ipsum dolor sit amet consectetur adipiscing elit.Lorem ipsum dolor sit amet consectetur. <a href="#">Keep Reading</a></span>
-        <span class="right phone">Contact Us On: (07) 4630 8118</span>
+        <span class="left intro"><?php kjwOptionTree('top_left_header_text')?></span>
+        <span class="right phone"><?php kjwOptionTree('top_right_header_text')?></span>
         <div class="clear"></div>
     </div>
 </div><!-- #topbar -->
 
 <div id="header">
     <div class="inner">
-        <h1 id="logo"><a href="<?php bloginfo('home');?>"><img src="<?php header_image(); ?>" alt="<?php bloginfo( 'description' ); ?>" /></a></h1>
+        <h1 id="logo"><a href="<?php bloginfo('home');?>"><img src="<?php kjwOptionTree('logo_url')?>" alt="<?php bloginfo( 'description' ); ?>" /></a></h1>
         <?php wp_nav_menu(array(
             'theme_location' => 'main-menu',
             'container' => 'div',

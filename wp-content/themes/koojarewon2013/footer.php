@@ -8,7 +8,7 @@
 <?php endif; ?>
     
 <div id="btmbar">
-    <div class="inner"><?php echo get_theme_mod('copyright_html')?></div>
+    <div class="inner"><?php kjwOptionTree('copyright_text')?></div>
 </div><!-- #btmbar -->
 <?php wp_footer();?>
 </body>

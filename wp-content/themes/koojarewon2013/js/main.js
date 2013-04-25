@@ -1,6 +1,6 @@
 (function($){
     $(function(){
-        $('#contactform').submit(function(e){
+        $('.kjwcontactform').submit(function(e){
             e.preventDefault();
             var $t = $(this);
             var $submit = $(':submit', $t);

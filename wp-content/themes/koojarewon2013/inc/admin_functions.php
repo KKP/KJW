@@ -38,7 +38,7 @@ class KoojarewonAdmin
     
     function admin_menu()
     {
-        add_options_page('Koojarewon Settings', 'Koojarewon Settings', 'manage_options', 'themecode_settings', array(&$this, 'settings'));
+//        add_options_page('Koojarewon Settings', 'Koojarewon Settings', 'manage_options', 'themecode_settings', array(&$this, 'settings'));
     }
     
     function add_meta_boxes()

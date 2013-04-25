@@ -50,10 +50,84 @@ a:hover, a:active {text-decoration:underline;color:#f08272;}
 #menu ul li.current-menu-item a {background:#DC5038;}
 
 /* CONTENT */
+#main {border-top:1px solid #d5d5d5;background:#FFF;padding:20px 0;}
+.side .inner {background:url(images/dot.gif) repeat-y 685px 0;}
+#content {width:670px;}
+#pagetitle {color:#dc5038;font-size:20px;font-weight:bold;text-transform:uppercase;padding:15px 0;}
+.posthumb {margin-bottom:20px;}
+.posthumb img {border:5px solid #e3e3e3}
+.format {font-size:13px;}
+.format ul {list-style-type:disc;margin:0 0 1.4em 2em;}
+.format iframe {border:10px solid #e3e3e3}
+.format h1 {color:#dc5038;font-size:22px;margin-bottom:10px;}
+.format a img {border:5px solid #e3e3e3}
+.format a:hover img {border:5px solid #dc5038}
+.slideshowlink {display:none;}
+.format .booking_form_div {font-weight:bold;}
+.format .booking_form_div .wpdev-form-control-wrap input,
+.format .booking_form_div textarea {border:1px solid #D5D5D5;font:13px 'Open Sans', sans-serif;color:#000;padding:5px 9px;width:350px;}
+.format .booking_form_div input[type="button"] {background:url(images/bg-button.gif) repeat-x left top #8f3424;color:#FFF;font:bold 13px 'Open Sans', sans-serif;border:0 none;cursor:pointer;padding:5px 15px;
+border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;}
+.format .booking_form_div input[type="button"]:hover {background:#D84E37;}
 
+.format .gform_wrapper .top_label input.medium {border:1px solid #D5D5D5;font:13px 'Open Sans', sans-serif;color:#000;padding:5px 9px;width:350px;}
+.format .gform_wrapper .top_label textarea.textarea {border:1px solid #D5D5D5;font:13px 'Open Sans', sans-serif;color:#000;padding:5px 9px;width:350px;}
+.format .gform_wrapper .gfield_required {color:#C00}
+.format .gform_wrapper .gform_footer {padding-top:0;}
+.format .gform_wrapper .gform_footer input.button {background:url(images/bg-button.gif) repeat-x left top #8f3424;color:#FFF;font:bold 13px 'Open Sans', sans-serif;border:0 none;cursor:pointer;padding:5px 15px;
+border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;}
+.format .gform_wrapper .gform_footer input.button:hover {background:#D84E37}
+
+#sliderarea {border:1px solid #e3e3e3;background:#FFF;padding:9px;margin:0 auto 20px;width:980px;}
+#slidernav {position:relative;width:980px;}
+#slidernav a {position:absolute;top:143px;z-index:9999;text-indent:-999999px;width:48px;height:48px;}
+#sliderprev {left:10px;background:url(images/arrow-left.png) no-repeat;}
+#slidernext {right:10px;background:url(images/arrow-right.png) no-repeat;}
+#slider {}
+#slider li {width:980px;height:335px;position:relative;}
+#slider li .overlay {width:960px;padding:10px;background:url(images/black-60.png) repeat;color:#FFF;position:absolute;bottom:0;left:0;}
+#slider li .overlay h2 {font-weight:bold;font-size:14px;}
+
+#primary_col {width:310px;text-align:justify}
+#secondary_col {width:310px;margin-right:15px;}
+#secondary_col .widget {margin-bottom:20px;font-size:13px;}
+#secondary_col .widget h3.title {color:#dc5038;font-size:22px;margin-bottom:10px;}
+#secondary_col .widget iframe {border:5px solid #e3e3e3}
+#secondary_col .widget a img {border:5px solid #e3e3e3}
+#secondary_col .widget a:hover img {border:5px solid #dc5038}
 
 /* SIDEBAR */
+#sidebar {width:285px;}
+#sidebar .widget {margin-bottom:20px;}
+#sidebar .widget h3.title {color:#DC5038;font-size:20px;margin-bottom:10px;}
+#sidebar .widget ul {border-top:1px dotted #c3c3c3;}
+#sidebar .widget ul li {border-bottom:1px dotted #c3c3c3;padding:7px 0 7px 10px;font-size:13px;background:url(images/bullet-sidebar.gif) no-repeat left center;}
+#sidebar .widget ul li a {color:#8D8D8D;font-weight:bold;}
+#sidebar .widget ul li a:hover {color:#DC5038;text-decoration:none;}
+#sidebar .widget .ngg-widget img {border:1px solid #bfbfbf;padding:2px;}
+#sidebar .widget .ngg-widget a:hover img {background:#e3e3e3}
 
+.page-template-template-home-php #sidebar {width:310px;}
+#sidebar .widget_wpdev_booking {width:310px;margin:0 !important;position:relative;}
+#sidebar .widget_wpdev_booking .datepick-inline {width:310px !important;margin-top:17px;}
+#sidebar .widget_wpdev_booking .datepick-one-month {float:none;}
+#sidebar .widget_wpdev_booking .calendar-links {height:auto;padding:0;margin:0;}
+#sidebar .widget_wpdev_booking .datepick-prev {position:absolute;width:auto;left:11px;top:11px;}
+#sidebar .widget_wpdev_booking .datepick-next {position:absolute;width:auto;right:11px;top:11px;text-align:left;}
+#sidebar .widget_wpdev_booking .datepick-prev a {display:block;width:23px;height:23px;background:url(images/cal-prev.gif) no-repeat;text-indent:-99999px;padding:0}
+#sidebar .widget_wpdev_booking .datepick-next a {display:block;width:23px;height:23px;background:url(images/cal-next.gif) no-repeat;text-indent:-99999px;padding:0}
+#sidebar .widget_wpdev_booking .datepick-header {width:310px !important;height:32px;background:#9a9a9a;color:#FFF;font-size:16px;font-weight:normal;padding:12px 0 0;}
+#sidebar .widget_wpdev_booking .datepick-inline table.datepick {width:310px !important;}
+#sidebar .datepick .datepick-title-row th {text-transform:uppercase;background:#f7f7f7;color:#666;padding:15px 0 !important;font-size:13px}
+#sidebar .widget_wpdev_booking .datepick-inline table.datepick td {height:40px;line-height:40px;width:auto;padding:0 !important;font-size:13px;}
+#sidebar .widget_wpdev_booking .datepick-inline table.datepick td a {height:40px;line-height:40px;}
+#sidebar .widget_wpdev_booking .datepick .datepick-days-cell-over a,
+#sidebar .widget_wpdev_booking .datepick-inline table.datepick td a:hover {text-decoration:none;border:1px solid #FFF;background:#a8a8a8;color:#FFF;
+border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;}
+#sidebar .datepick .datepick-unselectable {color:#bababa}
+#sidebar .datepick .datepick-days-cell a {background:#FFF;color:#707070}
+#kjwreserve {position:absolute;top:0;left:0;height:43px;width:300px;padding-left:12px;background:#dc5038;color:#FFF;font-size:16px;line-height:43px;}
+#kjwreserve:hover {text-decoration:none;background:#f08272;}
 
 /* FOOTER */
 #footer {background:#393939;color:#FFF;padding:28px 0;}
